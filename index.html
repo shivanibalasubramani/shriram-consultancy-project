@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Southern Spices</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+	<link rel="javascript" href="main.js">
+	 
+	 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+	<a href="#" class="logo">Southern Spices<span>.</span></a>
+	<ul class="navigation">
+		<li><a href="#banner">Home</a></li>
+		<li><a href="./about.html">About</a></li>
+		<li><a href="#menu">Menu</a></li>
+		<li><a href="#expert">Experts</a></li>
+		<li><a href="#testimonials">Feedback</a></li>
+		<li><a href="#order">Order</a></li>
+		<li><a href="#contact">Contact Us</a></li>
+	</ul>
+</header>
+
+<!--home page -->
+
+<section class="banner" id="banner">
+	<div class="content">
+		<h2>Discover Delicious Food</h2>
+		<p>Our cuisine is always filled with a lot of herbs and spices. Furthermore, the specialty of Our dishes is, it is always filled with curries. Whether veg or non-veg the dishes are in curry form. Moreover, Our cuisine has so many varieties of food that has further branches. The Branch consists of Mughal cuisine which is mostly of non-vegetarian dishes.</p>
+		<a href="#menu" class="btn">Our Menu</a>
+	</div>
+</section>
+
+<!--about us page-->
+
+
+
+<!--menu-->
+
+<section class="menu" id="menu">
+	<div class="title">
+		<h2 class="titletext">Our <span>M</span>enu</h2>
+		<p>A balanced diet is a cookie in each hand.</p>
+	</div>
+	<div class="content">
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/menu 4.jpg">
+			</div>
+			<div class="text">
+				<h3>Spicy Panner Tikka <br><i class="fa fa-star"></i> <i class="fa fa-star"></i> <span>Must try!</span></h3><br>
+                <h3>by Chef.Agaramudhalvan</h3>
+				<button onclick="myFunction()" class="btn">₹120(3pcs)</button>
+			</div> 
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/menu 2.jpg">
+			</div>
+			<div class="text">
+				<h3>Yummy Bread Pakora</h3><br>
+                <h3>by Chef.Santhosh</h3>
+				<button onclick="myFunction()" class="btn">₹80(2pcs)</button>
+			</div> 
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/vada.jpg">
+			</div>
+			<div class="text">
+				<h3>Crispy Vadas <br> <i class="fa fa-star"></i> <span>Best seller</span></h3><br>
+                <h3>by Chef.Agaramudhalvan</h3>
+				 <button onclick="myFunction()" class="btn">₹30(3pcs)</button>
+			</div> 
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/menu 1.jpg">
+			</div>
+			<div class="text">
+				<h3>Fried Idlies</h3><br>
+                <h3>by Chef.Diya</h3>
+				<button onclick="myFunction()" class="btn">₹80</button>
+			</div> 
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/menu 3.jpg">
+			</div>
+			<div class="text">
+				<h3>Crispy Fried Chicken <br> <i class="fa fa-star"></i> <span>Best seller</span></h3><br>
+                <h3>by Chef.Manoj</h3>
+				<button onclick="myFunction()" class="btn">₹150(4pcs)</button>
+			</div> 
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/idly.jpg">
+			</div>
+			<div class="text">
+				<h3>Idlies  <br> <i class="fa fa-star"></i> <span>Best seller</span></h3><br>
+                <h3>by Chef.Agaramudhalvan </h3>
+				<button onclick="myFunction()" class="btn">₹40(2pcs)</button>
+			</div> 
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/dosa.jpg">
+			</div>
+			<div class="text">
+				<h3>Crispy Dosa <br><i class="fa fa-star"></i> <i class="fa fa-star"></i> <span>Must try!</span></h3><br>
+                <h3>by Chef.Diya</h3>
+				<button onclick="myFunction()" class="btn">₹80</button>
+			</div> 
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/aloo paratha.jpg">
+			</div>
+			<div class="text">
+				<h3>Aloo Paratha</h3><br>
+                <h3>by Chef.Manoj</h3>
+				<button onclick="myFunction()" class="btn">₹80(3pcs)</button>
+			</div> 
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/tandoori roti.jpg">
+			</div>
+			<div class="text">
+				<h3>Tandori Rti</h3><br>
+                <h3>by Chef.Santhosh</h3>
+				<button onclick="myFunction()" class="btn">₹35(1pc)</button>
+			</div> 
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/paneer.jpg">
+			</div>
+			<div class="text">
+				<h3>Paneer Butter Masala <br><i class="fa fa-star"></i> <i class="fa fa-star"></i> <span>Must try!</span></h3><br>
+                <h3>by Chef.Santhosh</h3>
+				<button onclick="myFunction()" class="btn">₹120</button>
+			</div> 
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/butterchicken.jpg">
+			</div>
+			<div class="text">
+				<h3>Butter Chicken <br> <i class="fa fa-star"></i> <span>Best seller</span></h3><br>
+                <h3>by Chef.Agaramudhalvan</h3>
+				<button onclick="myFunction()" class="btn">₹180</button>
+			</div> 
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/fishcurry.jpg">
+			</div>
+			<div class="text">
+				<h3>Fish Curry</h3><br>
+                <h3>by Chef.Diya</h3>
+				<button onclick="myFunction()" class="btn">₹180</button>
+			</div> 
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/chicken biriyani.jpg">
+			</div>
+			<div class="text">
+				<h3>Chicken Biriyani <br> <i class="fa fa-star"></i> <span>Best seller</span></h3><br>
+                <h3>by Chef.Manoj</h3>
+				<button onclick="myFunction()" class="btn">₹150</button>
+			</div> 
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/mutton biriyani.jpg">
+			</div>
+			<div class="text">
+				<h3>Mutton Biriyani <br><i class="fa fa-star"></i> <i class="fa fa-star"></i> <span>Must try!</span></h3><br>
+                <h3>by Chef.Agaramudhalvan</h3>
+				<button onclick="myFunction()" class="btn">₹230</button>
+			</div> 
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/fish-biryani.jpg">
+			</div>
+			<div class="text">
+				<h3>Fish Biriyani</h3><br>
+                <h3>by Chef.Manoj</h3>
+				<button onclick="myFunction()" class="btn">₹230</button>
+			</div> 
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/shrimpbiriyani.jpg">
+			</div>
+			<div class="text">
+				<h3>Shrimp Biriyani</h3><br>
+                <h3>by Chef.Diya</h3>
+				<button onclick="myFunction()" class="btn">₹230</button>
+			</div> 
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/gulab jamun.jpg">
+			</div>
+			<div class="text">
+				<h3>Gulab Jamun <br><i class="fa fa-star"></i> <span>Best seller</span></h3><br>
+                <h3>by Chef.Santhosh</h3>
+				<button onclick="myFunction()" class="btn">₹30(2pcs)</button>
+			</div> 
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/ice.jpeg">
+			</div>
+			<div class="text">
+				<h3>Ice Cream(any flavour)</h3><br>
+                <h3>by Chef.Santhosh</h3>
+				<button onclick="myFunction()" class="btn">₹45(perscoop)</button>
+			</div> 
+		</div>
+	</div>
+	<div class="title">
+		 <a href="#menu" class="btn">View All</a>
+	</div>
+</section>
+
+<!--expert-->
+<section class="expert" id="expert">
+	<div class="title">
+		<h2 class="titletext">Our Kitchen <span>E</span>xperts</h2>
+		<p>Chefs don't make mistakes, instead they make new dishes.</p>
+	</div>
+	<div class="content">
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/chef 1.jpg">
+			</div>
+			<div class="text">
+				<h3>Head chef Mr.Agaramudhalvan <br>
+				    Rating: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> <br> 
+					Contact details: <br>
+					<i class="fa fa-phone"></i>  9735388261 <br>
+					<i class="fa fa-envelope"></i>  agara@gmail.com
+				</h3>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/chef 3.jpg">
+			</div>
+			<div class="text">
+				<h3>Asst chef <br>
+					Mr.Manoj <br>
+					Rating: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <br>
+					Contact details: <br>
+					<i class="fa fa-phone"></i>  9735326135 <br>
+					<i class="fa fa-envelope"></i>  mano@gmail.com
+				</h3>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/chef 2.jpg">
+			</div>
+			<div class="text">
+				<h3>Asst chef <br> Ms.Diya <br>
+					Rating: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <br>
+					Contact details: <br>
+					<i class="fa fa-phone"></i>  9735384521 <br>
+					<i class="fa fa-envelope"></i>  diya@gmail.com
+				</h3>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/chef 4.jpg">
+			</div>
+			<div class="text">
+				<h3>Asst chef <br> Mr.Santhosh <br>
+					Rating: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> <i class="fa fa-star-o"></i> <br>
+					Contact details: <br>
+					<i class="fa fa-phone"></i>  9794838826 <br>
+					<i class="fa fa-envelope"></i>  santhosh@gmail.com
+				</h3>
+			</div>
+		</div>
+	</div>
+</section>
+<!--feedback page-->
+
+<section class="testimonials" id="testimonials">
+	<div class="title white">
+		<h2 class="titletext">They<span> S</span>aid About Us</h2>
+		<p>Mistakes should be examined, learned from, and discarded; not dwelled upon and stored.</p>
+	</div>
+	<div class="content">
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/testimonials 1.jpeg">
+			</div>
+			<div class="text">
+				<p>"It’s a great experience. The ambiance is very welcoming and charming. Amazing Welcome Drink, food and service. Staff are extremely knowledgeable and make great recommendations.Menu is extensive and seasonal to a particularly high standard. Definitely fine dining."</p> <br><br>
+				<h3>-Ms.Divya <br><br></h3>
+				<h5>Customer Rating: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i>  </h5>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/testimonials 2.jpeg">
+			</div>
+			<div class="text">
+				<p>"This restaurant has left the best impressions.The food served was of high standard and very well presented.Excellent customer service by server Madel and the Manager Vishnu. As one of our group member had allergy with dairy products, the Manager came to our table and explained their allergy policy, this was very reassuring Excellent food.  "</p> <br><br>
+				<h3>-Ms.Shalini <br><br></h3>
+				<h5>Customer Rating: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i> </h5>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgbox">
+				<img src="pictures/testimonials 3.jpeg">
+			</div>
+			<div class="text">
+				<p>"This place is great! Atmosphere is chill and cool, the staff is also really friendly. They know what they’re doing and what they’re talking about, and you can tell making the customers happy is their main priority. Food is pretty good, their breakfast is a creative concept I love those Idlies and the vadas it is delicious it's highly recommended, and for their prices, it’s 100% worth it. "</p> <br><br>
+				<h3>-Mr.Ruben<br><br></h3>
+				<h5>Customer Rating: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i>  </h5>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!--order forum-->
+<section class="order" id="order">
+	<div class="title">
+		<h2 class="titletext"><span>O</span>rder Now</h2>
+		<p>Taste that best, its on time</p>
+	</div>
+	 <div class="orderform">
+		 <form action="">
+			 <input type="text" placeholder="Your name" class="ordera">
+			 <input type="text" placeholder="Your phone number" class="ordera">
+			<textarea name="" id="orderc" cols="30" rows="10" class="ordera orderc" placeholder="Your address"></textarea> 
+
+			<textarea name="" id="orderd" cols="30" rows="10" class="ordera orderc" placeholder="items"></textarea> 
+
+			<div class="inputbox"> 
+				<button onclick="myFunction()">order</button> 
+				<p id="button"></p>
+			</div>
+		 </form>
+		 <div class="picture">
+             <img src="pictures/order.png" alt="">
+		 </div>
+	 </div>
+	 
+
+</section>
+
+
+<!--contact us-->
+
+<section class="contact" id="contact">
+	<div class="title white">
+		<h2 class="titletext"><span>C</span>ontact Us</h2>
+		<p> For all queries, please send us your message.</p>
+	</div>
+	<div class="alert">Your message has been sent</div>
+	<div class="contactform"  id="contactform">
+		<h3>Send Message</h3>
+		<div class="inputbox">
+			<input type="text" placeholder="Name" id="name">
+		</div>
+		<div class="inputbox">
+			<input type="text" placeholder="E-mail" id="email">
+		</div>
+		<div class="inputbox">
+			<input type="text" placeholder="Phone number" id="phonenumber">
+		</div>
+		<div class="inputbox">
+			<textarea rows="5" placeholder="Type your message" id="message" ></textarea>
+		</div>
+		<div class="inputbox">
+			 <button type="submit" class="btn">submit</button>
+		</div>
+	</div>
+
+</section>
+
+<!-- Footer Menu -->
+
+
+<footer id = "footer">
+        
+    <div class="company-details">
+        <div class="row">
+            <div id ="col1">
+                <span id = "icon" class="fa fa-map-marker"></span>
+                      
+                <span>
+					Our Branches:
+                     <ul>
+						 <li>Chennai</li>
+						 <li>Cochin</li>
+						 <li>Vishakapatnam</li>
+						 <li>Bangalore</li>
+						 <li>Mumbai</li>
+						 <li>Delhi</li>
+					 </ul>
+                </span>
+            </div>
+                  
+            <div id ="col2">
+                <span id="icon" class="fa fa-phone"></span>
+  
+                <span>
+                    phone:   +91-9944887676 <br>
+					             +91-9944887677 <br>
+							     +91-9944887678
+					           
+                </span>
+            </div>
+                      
+            <div id ="col3">
+                <span id="icon" class="fa fa-envelope"></span>
+                <span>southernspices@gmail.com</span> <br>
+				<span>southernspices@yahoo.com</span> <br>
+				<span>southernspices@outlook.com</span> <br>
+				
+
+            </div>
+        </div>
+    </div>
+              
+    <!-- Copyright Section -->
+    <div class="copyright">
+        <p>©  All rights reserved 2021 | SouthernSpices.</p>
+      
+        <div class="contactus">
+			<p><i class="fa fa-facebook-square"></i> <i class="fa fa-instagram"></i> <i class="fa fa-twitter-square"></i>  </p> <br>
+			<p>Also find us on: <img src="pictures/app2.png">  <img src="pictures/app1.png"></p>
+		</div>
+    </div>
+</footer>
+
+ 
+ 
+<script type="text/javascript">
+window.addEventListener('scroll',function(){
+	const header = document.querySelector('header');
+	header.classList.toggle("sticky",window.scrollY > 0);
+});
+</script>
+<script type="text/javascript">
+	function myFunction() {
+  document.getElementById("button").innerHTML = "order confirmed!";
+}
+</script>
+ 
+ 
+</body>
+</html>
